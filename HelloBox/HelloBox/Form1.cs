@@ -16,5 +16,28 @@ namespace HelloBox
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string a = textBox1.Text;
+            if (a == "")
+            {
+                MessageBox.Show("You didn't enter anything!");
+            }
+            else
+            {
+                MessageBox.Show("Welcome, " + textBox1.Text);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
